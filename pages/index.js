@@ -132,6 +132,7 @@ export default function Home() {
     }, 2000);
   };
 
+  //This function is to run all Algorithims
   const runAllAlgorithms = () => {
     setRunning(true);
     setTimeout(() => {
