@@ -232,7 +232,7 @@ export default function Home()
         yOffset += 10;
       }
 
-      yOffset += 10; // Add extra space between algorithms
+      yOffset += 10;  // Adding extra spaces between Algorithms
     });
 
     doc.save('results.pdf');
