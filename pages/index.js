@@ -20,6 +20,7 @@ export default function Home() {
     setProcesses(newProcesses);
   };
 
+  //for the fifo algorithim
   const fifo = (processes) => {
     let currentTime = 0;
     return processes.map(p => {
@@ -33,6 +34,7 @@ export default function Home() {
     });
   };
 
+  //for the sjf algorithim
   const sjf = (processes) => {
     let currentTime = 0;
     const sortedProcesses = [...processes].sort((a, b) => a.burstTime - b.burstTime);
@@ -47,6 +49,7 @@ export default function Home() {
     });
   };
 
+  //for the stch algorithim
   const stch = (processes) => {
     let currentTime = 0;
     const remainingProcesses = processes.map(p => ({ ...p, remainingTime: p.burstTime }));
