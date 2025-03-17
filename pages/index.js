@@ -47,7 +47,7 @@ export default function Home() {
     });
   };
 
-  const stcf = (processes) => {
+  const stch = (processes) => {
     let currentTime = 0;
     const remainingProcesses = processes.map(p => ({ ...p, remainingTime: p.burstTime }));
     const completedProcesses = [];
