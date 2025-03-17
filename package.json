@@ -2,13 +2,14 @@
   "name": "cpu-scheduler",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://lymentix.github.io/Cpu-scheduling-simulator",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "gh-pages -d out",
-    "predeploy": "npm run build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "chart.js": "^4.4.8",
@@ -25,6 +26,5 @@
     "eslint-config-next": "15.2.2",
     "gh-pages": "^6.3.0",
     "tailwindcss": "^4.0.0"
-  },
-  "homepage": "https://lymentix.github.io/Cpu-scheduling-simulator"
+  }
 }
