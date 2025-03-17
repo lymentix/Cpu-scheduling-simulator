@@ -169,6 +169,7 @@ export default function Home() {
     }, 2000);
   };
 
+  //For the animation (Optional) adds colors to it when running and showing Results for the CPU algorithims
   useEffect(() => {
     if (Object.keys(results).length > 0) {
       const ctx = document.getElementById('resultsChart');
@@ -198,6 +199,8 @@ export default function Home() {
     }
   }, [results]);
 
+
+  //Saving Results as PDF for the running CPU alogrithims
   const saveResultsAsPDF = () => {
     if (Object.keys(results).length === 0) {
       alert('No results to save!');
