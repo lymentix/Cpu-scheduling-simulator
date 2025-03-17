@@ -3,7 +3,9 @@ import Chart from 'chart.js/auto';
 import { jsPDF } from 'jspdf';
 import { motion } from 'framer-motion';
 
-export default function Home() {
+//Setting up processes and generating them when clicking on the button
+export default function Home() 
+{
   const [processes, setProcesses] = useState([]);
   const [numProcesses, setNumProcesses] = useState(5);
   const [timeQuantum, setTimeQuantum] = useState(2);
