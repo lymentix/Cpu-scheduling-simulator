@@ -78,6 +78,7 @@ export default function Home()
     return completedProcesses;
   };
 
+  //Adding the function for the rr algorithim with results when clicking on the run rr button
   const rr = (processes, quantum) => {
     let currentTime = 0;
     const queue = [...processes];
