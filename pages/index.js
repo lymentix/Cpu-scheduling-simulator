@@ -50,7 +50,7 @@ export default function Home() {
   };
 
   //for the stch algorithim
-  const stch = (processes) => {
+  const stcf = (processes) => {
     let currentTime = 0;
     const remainingProcesses = processes.map(p => ({ ...p, remainingTime: p.burstTime }));
     const completedProcesses = [];
