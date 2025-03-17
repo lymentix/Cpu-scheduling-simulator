@@ -238,6 +238,8 @@ export default function Home()
     doc.save('results.pdf');
   };
 
+
+  //Adding Animation to the project for functionlity and for the requirements
   return (
     <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
       <h1>CPU Scheduling Simulator</h1>
